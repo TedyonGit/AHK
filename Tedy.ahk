@@ -4,7 +4,7 @@
 
 #Include ./Modules/WebModule.ahk
 
-Version := "v0.1"
+Version := "v0.2"
 
 RemoteVersion := GET("https://raw.githubusercontent.com/TedyonGit/AHK/refs/heads/main/version")
 
