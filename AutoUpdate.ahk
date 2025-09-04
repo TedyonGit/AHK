@@ -4,7 +4,6 @@ UrlDownloadToFile, https://raw.githubusercontent.com/TedyonGit/AHK/refs/heads/ma
 
 if(FileExist("changes.txt"))
 {
-	Sleep, 3000
 	Path := ""
 	DownloadLink := ""
 	Loop
@@ -26,10 +25,8 @@ if(FileExist("changes.txt"))
 	    	UrlDownloadToFile, %DownloadLink%, %RelativePath%
 	    }
 	}
-	Sleep, 2000
 	FileDelete, changes.txt
-	Command := A_Args[1]
-	Command .= "/Tedy.ahk"
+	Command := A_Args[1] . "\Tedy.ahk"
 	Run, %Command%
 	return
 }
