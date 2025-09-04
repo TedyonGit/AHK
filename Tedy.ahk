@@ -15,7 +15,6 @@ Path .= "\AutoUpdate.ahk"
 
 if(Version != RemoteVersion)
 {
-	MsgBox, %Path%
 	UrlDownloadToFile, https://raw.githubusercontent.com/TedyonGit/AHK/refs/heads/main/AutoUpdate.ahk, %Path%
 	Run, %Path% %A_ScriptDir%
 	ExitApp
