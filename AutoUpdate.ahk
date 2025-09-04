@@ -23,6 +23,8 @@ if(FileExist("changes.txt"))
 	    	RelativePath := A_Args[1]
 	    	RelativePath .= Path
 	    	UrlDownloadToFile, %DownloadLink%, %RelativePath%
+			DownloadLink := ""
+			Path := ""
 	    }
 	}
 	FileDelete, changes.txt
