@@ -2,7 +2,7 @@
 #NoEnv
 #SingleInstance Force
 
-#Include ./Modules/WebModule.ahk
+#Include %A_ScriptDir%/Modules/WebModule.ahk
 
 Version := "v0.2"
 
@@ -60,4 +60,4 @@ DestroyBR(n) {
 	Gui, %n%:Destroy
 }
 
-#Include ./Modules/Controller.ahk
+#Include %A_ScriptDir%/Modules/Controller.ahk
